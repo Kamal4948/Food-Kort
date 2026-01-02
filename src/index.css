@@ -1,0 +1,115 @@
+
+@tailwind base;
+@layer base {
+  html {
+    font-family: 'Urbanist', system-ui, sans-serif;
+  }
+}
+@tailwind components;
+@tailwind utilities;
+
+
+
+/*---------------------------
+# Button CSS
+----------------------------*/
+button{
+  cursor: pointer;
+}
+.button {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 12px 15px;
+  outline: none;
+  border-radius: 10px;
+  transition: all 500ms ease;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    transform 0.2s ease-in-out;
+}
+
+.button.button-sm{
+  padding: 7.5px 15px;
+}
+
+.button-primary{
+  background-color: #FF6D6A;
+  border-color: #FF6D6A;
+  color: #fff;
+}
+
+.button-brown{
+  background-color: var(--brown-1);
+  border-color: var(--brown-1);
+  color: #fff;
+}
+
+.button-bordered-brown{
+  background-color: var(--white);
+  border-color: var(--brown-1);
+  color: var(--brown-1);
+}
+.button-primary-grad{
+  background: linear-gradient(90deg, #005C4D 0%, #0F2D28 100%);
+  color: #fff;
+}
+
+
+@layer components{
+  .otp-input{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 14px 16px;
+    width: 48px;
+    height: 48px;
+    border-radius: 5px;
+    border: 1px solid #E8ECF4;
+    color: #000;
+    background-color: #F7F8F9;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    outline: none;
+    &:focus{
+      border-color: #FF6D6A;
+      color: #FF6D6A;
+    }
+  }
+  .upload-btn{
+    width: 120px;
+    border: 1px dashed var(--border-1);
+    padding: 10px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #000;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .upload-btn input[type="file"]{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+
+}
