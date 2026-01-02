@@ -2,17 +2,17 @@ React.js Project
 A simple React.js project.
 
 Project Setup
-1. Install dependencies
+### 1. Install dependencies
 npm install
-# or
+or
 yarn
 
-2. Start development server
+### 2. Start development server
 npm run dev
-# or
-yarn run dev
+or
+yarn start
 
-3. Build for production
+### 3. Build for production
 npm run build
-# or
+or
 yarn build
